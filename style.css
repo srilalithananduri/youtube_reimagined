@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Alegreya", serif;
+    background-color: rgb(0, 0, 0);
+  }
+
+@media(min-width: 990px) {
+    .hero{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .my-video{
+        width: 100%;
+        height: 100vh;
+        transform: scale(1.2);
+    }
+    
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+    }
+    
+    .nav{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        top:4%;
+        left: 50%;
+        transform: translate(-50%, -50% );
+        margin-top: 20px;
+    }
+    
+    .nav{
+        display: flex;
+    }
+    
+    .nav-left{
+        display: flex;
+        gap: 20px;
+        margin-left: 30px;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 8vw;
+        background-color: rgba(255, 255, 255, 0.45);
+    }
+    
+    .nav-middle{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        border-color: wheat;
+        background-color: #0000005a;
+    }
+    
+    form {
+        width: 40vw;
+        padding: 18px;
+        font-size: 28px;
+        background-color: #0000001a;
+        border-radius: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.375);
+        display: flex;
+        gap: 15px;
+        margin: 0 auto;
+        align-items: center;
+      }
+      
+      .micclass {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        cursor: pointer;
+      }
+    
+    
+    .email_input{
+        background-color: #0000001a;
+        border: none;
+        outline: none;
+        font-size: 36px;
+        margin-left: 20px;
+        width: 100%;
+    }
+    
+    .nav-right{
+        display: flex;
+        gap: 40px;
+        margin-right: 50px;
+        align-items: center;
+    }
+    
+    .leftcontent{
+        position: absolute;
+        top:12%;
+        left: 8%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    
+    .rightcontent{
+        position: absolute;
+        top:10%;
+        bottom: 0%;
+        right: 0%;
+        width: 32%;
+        overflow: hidden;
+        justify-content: left;
+        display: flex;
+        color: white;
+    }
+    
+    
+    .img-roadmap{
+        object-fit: cover;
+        transform: scale(-1px);
+        
+    }
+    
+    .img-roadmap:hover{
+        cursor: pointer;
+    }
+    
+    
+    .title{
+        font-size: 5vmax;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+    }
+    
+    .titlefirst{
+        font-size: 5vmax;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        overflow: hidden;
+        border-right: .05em solid rgb(255, 0, 0);
+        width: 0;
+        animation: 
+        typing 1s steps(20, end) forwards,
+        blink .8s infinite;
+    }
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    @keyframes blink {
+        from { border-color: transparent }
+        to { border-color: rgb(255, 0, 0); }
+    }
+    
+    .buttons{
+        margin-top: -40px;
+        display: flex;
+        gap: 40px;
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .button{
+        border: 1px solid rgba(255, 255, 255, 0.46);
+        border-radius: 60px;
+        padding: 20px 90px;
+        letter-spacing: 2px;
+    }
+    
+    .button:hover{
+        background-color: rgba(255, 255, 255, 0.837);
+        color: black;
+        cursor: pointer;
+        box-shadow: 0 12px 16px 0 rgba(208, 208, 208, 0.159), 0 17px 50px 0 rgba(117, 116, 116, 0.19);
+    }
+    
+    .bottomtitle{
+        margin-top: 200px;
+        display: flex;
+        gap: 40px;
+    }
+    
+    .findout{
+        font-size: 45px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        margin-top: 30px;
+    }
+    
+    
+    .findout:hover{
+        cursor: pointer;
+    }
+    
+    .return-icon{
+    
+    }
+}
+
+@media(min-width: 586px) and (max-width: 990px) {
+    .hero{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .my-video{
+        width: 100%;
+        height: 100vh;
+        transform: scale(1.2);
+    }
+    
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+    }
+    
+    .nav{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        top:4%;
+        left: 50%;
+        transform: translate(-50%, -50% );
+        margin-top: 20px;
+    }
+    
+    .nav{
+        display: flex;
+    }
+    
+    .nav-left{
+        display: flex;
+        gap: 20px;
+        margin-left: 30px;
+        align-items: center;
+    }
+    
+    .logo{
+        width: 8vw;
+        background-color: rgba(255, 255, 255, 0.45);
+    }
+    
+    .nav-middle{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        border-color: wheat;
+        background-color: #0000005a;
+    }
+    
+    form {
+        width: 40vw;
+        padding: 18px;
+        font-size: 28px;
+        background-color: #0000001a;
+        border-radius: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.375);
+        display: flex;
+        gap: 15px;
+        margin: 0 auto;
+        align-items: center;
+      }
+      
+      .micclass {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        cursor: pointer;
+      }
+    
+    
+    .email_input{
+        background-color: #0000001a;
+        border: none;
+        outline: none;
+        font-size: 36px;
+        margin-left: 20px;
+        width: 100%;
+    }
+    
+    .nav-right{
+        display: flex;
+        gap: 40px;
+        margin-right: 50px;
+        align-items: center;
+    }
+    
+    .leftcontent{
+        position: absolute;
+        top:12%;
+        left: 8%;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    
+    .rightcontent{
+        position: absolute;
+        top:10%;
+        bottom: 0%;
+        right: 0%;
+        width: 32%;
+        overflow: hidden;
+        justify-content: left;
+        display: flex;
+        color: white;
+    }
+    
+    
+    .img-roadmap{
+        object-fit: cover;
+        transform: scale(-1px);
+        
+    }
+    
+    .img-roadmap:hover{
+        cursor: pointer;
+    }
+    
+    
+    .title{
+        font-size: 5vmax;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+    }
+    
+    .titlefirst{
+        font-size: 5vmax;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        overflow: hidden;
+        border-right: .05em solid rgb(255, 0, 0);
+        width: 0;
+        animation: 
+        typing 1s steps(20, end) forwards,
+        blink .8s infinite;
+    }
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    @keyframes blink {
+        from { border-color: transparent }
+        to { border-color: rgb(255, 0, 0); }
+    }
+    
+    .buttons{
+        margin-top: -40px;
+        display: flex;
+        gap: 40px;
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .button{
+        border: 1px solid rgba(255, 255, 255, 0.46);
+        border-radius: 60px;
+        padding: 20px 90px;
+        letter-spacing: 2px;
+    }
+    
+    .button:hover{
+        background-color: rgba(255, 255, 255, 0.837);
+        color: black;
+        cursor: pointer;
+        box-shadow: 0 12px 16px 0 rgba(208, 208, 208, 0.159), 0 17px 50px 0 rgba(117, 116, 116, 0.19);
+    }
+    
+    .bottomtitle{
+        margin-top: 200px;
+        display: flex;
+        gap: 40px;
+    }
+    
+    .findout{
+        font-size: 45px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        margin-top: 30px;
+    }
+    
+    
+    .findout:hover{
+        cursor: pointer;
+    }
+    
+    .return-icon{
+    
+    }
+}
+
+@media(max-width: 586px){ 
+    .hero{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    .my-video{
+        width: 100%;
+        height: 100vh;
+        transform: scale(1.2);
+    }
+    
+    .tint{
+        background-color: rgba(0, 0, 0, 0.45);
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100vh;
+    }
+    
+    .nav{
+        position: absolute;
+        display: flex;
+        width: calc(100vw - 10px);
+        justify-content: space-between;
+        align-items: center;
+        top:4%;
+        left: 50%;
+        transform: translate(-50%, -50% );
+        margin-top: 20px;
+    }
+    
+    .nav{
+        display: flex;
+    }
+    
+    .nav-left{
+        /* display: flex;
+        gap: 20px;
+        margin-left: 30px;
+        align-items: center; */
+        display: none;
+    }
+    
+    .logo{
+        width: 10vw;
+        background-color: rgba(255, 255, 255, 0.45);
+    }
+    
+    .nav-middle{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        border-color: wheat;
+        background-color: #0000005a;
+    }
+    
+    form {
+        width: 40vw;
+        padding: 18px;
+        font-size: 28px;
+        background-color: #0000001a;
+        border-radius: 48px;
+        border: 1px solid rgba(255, 255, 255, 0.375);
+        display: flex;
+        gap: 5px;
+        margin: 0 auto;
+        align-items: center;
+      }
+      
+      .micclass {
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        cursor: pointer;
+      }
+    
+    
+    .email_input{
+        background-color: #0000001a;
+        border: none;
+        outline: none;
+        font-size: 36px;
+        margin-left: 20px;
+        width: 100%;
+    }
+    
+    .nav-right{
+        display: flex;
+        gap: 40px;
+        margin-right: 50px;
+        align-items: center;
+    }
+    
+    .leftcontent{
+        width: 80vw;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+    }
+    
+    .rightcontent{
+        position: absolute;
+        top:10%;
+        bottom: 0%;
+        right: 0%;
+        width: 32%;
+        overflow: hidden;
+        justify-content: left;
+        display: flex;
+        color: white;
+    }
+    
+    
+    .img-roadmap{
+        object-fit: cover;
+        transform: scale(-1px);
+        
+    }
+    
+    .img-roadmap:hover{
+        cursor: pointer;
+    }
+    
+    
+    .title{
+        font-size: 5vmax;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+    }
+    
+    /* .titlefirst{
+        font-size: 5vmax;
+        text-align: left;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 400;
+        overflow: hidden;
+        border-right: .05em solid rgb(255, 0, 0);
+        width: 0;
+        animation: 
+        typing 1s steps(20, end) forwards,
+        blink .8s infinite;
+    } */
+    
+    /* @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    @keyframes blink {
+        from { border-color: transparent }
+        to { border-color: rgb(255, 0, 0); }
+    } */
+    
+    .buttons{
+        margin-top: -40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        font-size: 40px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .button{
+        border: 1px solid rgba(255, 255, 255, 0.46);
+        border-radius: 60px;
+        padding: 20px 90px;
+        letter-spacing: 2px;
+    }
+    
+    .button:hover{
+        background-color: rgba(255, 255, 255, 0.837);
+        color: black;
+        cursor: pointer;
+        box-shadow: 0 12px 16px 0 rgba(208, 208, 208, 0.159), 0 17px 50px 0 rgba(117, 116, 116, 0.19);
+    }
+    
+    .bottomtitle{
+        margin-top: 200px;
+        display: flex;
+        gap: 40px;
+    }
+    
+    .findout{
+        font-size: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: lighter;
+        margin-top: 30px;
+    }
+    
+    
+    .findout:hover{
+        cursor: pointer;
+    }
+    
+    .return-icon{
+    
+    }
+}
