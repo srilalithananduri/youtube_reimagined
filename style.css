@@ -177,8 +177,8 @@ body {
     
     .button{
         border: 1px solid rgba(255, 255, 255, 0.46);
-        border-radius: 60px;
-        padding: 20px 90px;
+        border-radius: 30px;
+        padding: 20px 40px;
         letter-spacing: 2px;
     }
     
@@ -190,7 +190,7 @@ body {
     }
     
     .bottomtitle{
-        margin-top: 200px;
+        margin-top: 70px;
         display: flex;
         gap: 40px;
     }
